@@ -1,0 +1,26 @@
+using UnityEngine;
+using System.Collections;
+
+public class functions : MonoBehaviour {
+
+	string question = "Are you hungry? Y/N";
+	string no = "No? Ok, maybe later.";
+
+	// Use this for initialization
+	void Start () {
+		print (question);
+		}
+		
+	// Update is called once per frame
+	void Update () {
+		if (Input.GetKeyDown ("y")) {
+			Lunch ();
+		} else if (Input.GetKeyDown ("n")) {
+			print (no);
+		}
+	}
+
+	void Lunch () {
+		print ("Today's lunch is hamburgers. For dessert, we will have cake.");
+	}
+}
